@@ -16,11 +16,19 @@
                     <h2 class="subtitle">
                         Your local development environment
                     </h2>
+                    
                 </div>
             </div>
         </section>
         <section class="section">
             <div class="container">
+                <h3>
+                    <center>
+                    Este é um lamp stack que pode ser configurado na pasta <code>docker-compose-lamp</code><br>
+                    Documentação: <a href="https://github.com/sprintcube/docker-compose-lamp">sprintcube/docker-compose-lamp</a>
+                    </center>
+                </h3>
+                <br>
                 <div class="columns">
                     <div class="column">
                         <h3 class="title is-3 has-text-centered">Environment</h3>
@@ -33,7 +41,7 @@
                                     <?php
                                     $link = mysqli_connect("mysql", "root", "tiger", null);
 
-/* check connection */
+                                    /* check connection */
                                     if (mysqli_connect_errno()) {
                                         printf("MySQL connecttion failed: %s", mysqli_connect_error());
                                     } else {
@@ -53,7 +61,7 @@
                         <div class="content">
                             <ul>
                                 <li><a href="http://localhost/phpinfo.php">phpinfo()</a></li>
-                                <li><a href="http://localhost:8080">phpMyAdmin</a></li>
+                                <li><a target="_blank" href="http://localhost:8080">phpMyAdmin</a></li>
                                 <li><a href="http://localhost/test_db.php">Test DB Connection</a></li>
                             </ul>
                         </div>
